@@ -8,7 +8,11 @@ What is the sequence of messages exchanged by the client and the server?
     Hello -> Hello,Ack -> Ask,Ack -> Answer,Ack -> ... -> Bye -> Bye,Ack.
 What happens when a message is received from the other party?
     control syntax then send a answer and a Ack.
-What is the syntax of the messages?
-    How we generate and parse them? maybe with a XML syntax and we can use JDOM.
+What is the syntax of the messages? How we generate and parse them?
+    {
+        OPERATOR: valeur
+        OPERAND1: valeur
+        OPERAND2: valeur
+    }
 Who closes the connection and when?
     Client close the connection when he has the last( if we consider multiple question) answer.
